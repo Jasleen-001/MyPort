@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Playfair+Display&display=swap');
+@media screen and (max-width: 1288px) {
+
+    .fname , .lname{
+        
+        font-size:70px;
+   
+    }
+    .designation{
+        font-size: 35px;
+     
+    }
+
+    /* PROJECTS SECTION */
+    .project{
+        margin-top:50px;
+        margin-bottom: 70px;
+        margin-left:50px;
+    }
+    .cover img{
+        width:100%;
+        height:120%;
+    }
+
+    .right{
+        margin-top:25px;
+    }
+    .right h5{
+        width:100%;
+    }
+    .right h5{
+        font-size:1.2rem;    
+    }
+    .right a{
+        margin-left:50%;
+    }
+    .myimg{
+        margin-left: 10%;
+        margin-top: 50px;
+        margin-right:25px;
+    }
+    .myimg img{
+        height: 100%;
+        width: 100%;
+    }
+
+  }
+
+
+@media screen and (max-width: 768px) {
+
+    .page{
+        margin-top: 10px;
+       
+        margin-bottom: 0px;
+      }
+    .fname , .lname{
+        float: left;
+        font-size:70px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .designation{
+        font-size: 30px;
+        margin-top:70px;
+        line-height:15pt;
+    }
+    .info{
+        margin-top:30px;
+        line-height:35pt;
+        margin-left: 2px;
+    }
+
+    #circle{
+        margin-top:25%;
+        margin-left: 50%;
+    }
+
+    .enter-hover{
+        visibility: hidden;
+    }
+
+    .enter-site{
+        visibility:visible;
+    }
+
+    /* HOME PAGE */
+
+    .bio{
+        margin-top:155px;
+    }
+
+    .mydetails{
+        width:80%;
+        margin-bottom:40px;
+        margin-left: 10%;
+        font-size: 1.5rem;
+    }
+    .myimg{
+        margin-left: 10%;
+    }
+    .myimg img{
+        width:80%;
+    }
+
+    /* PTOJECT SECTION */
+    .project{
+        margin-top:150px;
+        margin-bottom: 70px;
+        margin-left:0px;
+    }
+    .cover img{
+        width:100%;
+        height:120%;
+    }
+
+    .right{
+        margin-top:75px;
+    }
+    .right h5{
+        font-size:1.5rem;
+    }
+    .meme-box{
+        visibility: hidden;
+    }
+    .contact-box {
+        position: relative;
+         width:50%;
+         margin-top:-450px;
+         margin-left:25%;
+       
+       }
+  }
+
+@media screen and (max-width: 575px) {
+
+    /* L A N D I N G  P A G E */
+    .page{
+        margin-top: 10px;
+       
+        margin-bottom: 0px;
+      }
+    .fname , .lname{
+        
+        font-size:45px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .designation{
+        font-size: 30px;
+        margin-top:70px;
+        line-height:15pt;
+    }
+    .info{
+        margin-top:30px;
+        line-height:35pt;
+        margin-left: 2px;
+    }
+
+    .enter-hover{
+        visibility: hidden;
+    }
+
+    .enter-site{
+        visibility:visible;
+    }
+
+    #circle{
+        margin-top:20%;
+        margin-left: 50%;
+    }
+
+    .menu-btn{
+        font-size: 10px;
+        right: 50px;
+    }
+
+    /* HOME PAGE */
+    .bio{
+        margin-top: 25px;
+    }
+    .mydetails{
+        width: 100%;
+        margin-left:0;
+        font-size: 1.2rem;
+    
+    }
+    .mydetails h1{
+        font-size: 2.2rem;
+    }
+    .mydetails h5{
+        font-size: 1.2rem;
+        font-weight: bolder;
+    }
+    .myimg{
+        margin-left:0;
+        margin-top:1px;
+    }
+
+    .meme-box{
+        visibility: hidden;
+    }
+
+    .contact-box {
+        position: relative;
+         width:100%;
+         margin-top:-30px;
+         margin-left: 0px;
+       
+       }
+
+  /*  .myimg{
+        margin-left:10px;
+    }
+    .myimg  img{
+        width: auto;
+        height:80%;
+    }
+    .mydetails{
+        margin-top: 45px;
+        width:35%;
+        font-size: 1.2rem;
+        line-height:35px;
+    }*/
+
+}
+
+

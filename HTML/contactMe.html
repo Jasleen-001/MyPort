@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/responsive-style.css">
+    <link rel="icon" type="image/png" href="../images/Jasleen-Logo.png">
+    <title>CONTACT ME</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Navbar icon-->
+        <div class="menu-btn logo">
+            <i class="fas fa-times-circle fa-3x pos"></i>
+        </div>
+         <!-- navbar-->
+         <nav class="navbar navbar-expand-sm justify-content-center menu">
+            <ul class="navbar-nav">
+                <li class="nav-item lidesign">
+                    <a href="home.html" class="nav-link">BIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">PROJECTS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="JASLEEN_KAUR.pdf" target="_blank" class="nav-link">RESUME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTACT ME</a>
+                </li>
+            </ul>
+         </nav>
+        <div class="row contact">
+            <div class="col-md-5 meme-box">
+                <img src="../images/one.png">
+            </div>
+            <div class="col-md-6 contact-box">
+                <form name="contactME">
+                    <div class="contact-heading"><h2>Get In Touch</h2></div>
+
+                    <div class="input-info">
+                        <input type="text" name="name" id="name" required="required" />
+                        <label class="place" for="name">Your name:</label>
+                    
+                    </div>
+                    <div class="input-info">
+                        <input type="text" name="subject" id="subject" required="required" />
+                        <label class="place" for="subject">Subject:</label>
+                    </div>
+                    <div class="input-info">
+                        <input type="textbox" name="message" id="message" required="required" />
+                        <label class="place" for="message">Message:</label>
+                    </div>
+
+                    <button name="submit" type="submit"  >
+                        <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                            </svg>
+                        </div>
+                        </div>
+                        <span>Send</span>
+                    </button>
+
+
+               <!-- <button class="btn">
+                SUBMIT</button>-->
+                </form>
+            </div>
+
+    
+        </div>
+    </div>
+    <script>
+		var form = document.forms["contactME"];
+		form.addEventListener('submit', contact_submit, false);
+
+		function contact_submit(e) {
+			// Stop Form From Submitting
+			e.preventDefault();
+
+			// Set Initial Variables
+			var target = e.target || e.srcElement;
+			var to = 'kaurjasleen1103@gmail.com';
+			var uri = 'mailto:' + to;
+			var body = '';
+
+			// Set Form Values to Variables
+			var name = target.elements['name'].value;
+			var subject = target.elements['subject'].value;
+			var message = target.elements['message'].value;
+
+			// Build Body / Message with all Input Fields
+			body += message + "\r\n\r\n";
+			body += "Name: " + name + "\r\n";
+
+			// Build final Mailto URI
+			uri += '?subject=' + encodeURIComponent(subject);
+			uri += '&body=' + encodeURIComponent(body);
+
+			// Open Mailto in New Window / Tab
+			window.open(uri, '_blank');
+		}
+	</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+    crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.13.1/js/all.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>
